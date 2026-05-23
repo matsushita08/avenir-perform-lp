@@ -14,7 +14,7 @@ export default function Services() {
 
       {/* 施術イメージ */}
       <div className="relative rounded-2xl overflow-hidden mb-8" style={{ height: "180px" }}>
-        <Image src="/images/training1.jpg" alt="施術イメージ" fill className="object-cover" style={{ filter: "brightness(0.55) saturate(0.85)" }} />
+        <Image src="/images/session1.jpg" alt="施術イメージ" fill className="object-cover" style={{ filter: "brightness(0.5) saturate(0.85)", objectPosition: "center 40%" }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,6,10,0.8), rgba(6,6,10,0.3))" }} />
         <div className="absolute inset-0 flex items-center px-8">
           <p className="text-lg font-bold leading-9" style={{ color: "#E8C98A" }}>

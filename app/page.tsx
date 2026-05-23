@@ -10,6 +10,7 @@ import Profile from "@/components/sections/Profile";
 import Pricing from "@/components/sections/Pricing";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+import Gallery from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
@@ -37,6 +38,8 @@ export default function Home() {
       <Testimonial />
       <div className="section-divider" />
       <Services />
+      <div className="section-divider" />
+      <Gallery />
       <div className="section-divider" />
       <Reasons />
       <div className="section-divider" />
