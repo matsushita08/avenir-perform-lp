@@ -27,8 +27,8 @@ export default function Profile() {
         <div className="space-y-4 mb-6">
           {descLines.map((para, i) => (
             <p key={i} className="text-sm leading-8" style={{ color: "#8B8B9E" }}>
-              {para.split("\n").map((line, j) => (
-                <span key={j}>{line}{j < para.split("\n").length - 1 && <br />}</span>
+              {para.split("\n").map((line, j, arr) => (
+                <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
               ))}
             </p>
           ))}
@@ -38,8 +38,8 @@ export default function Profile() {
           <div className="pt-5" style={{ borderTop: "1px solid rgba(201,169,110,0.15)" }}>
             <p className="text-xs font-bold tracking-widest mb-3" style={{ color: "#C9A96E" }}>CREDENTIALS</p>
             <div className="flex flex-wrap gap-2">
-              {profile.credentials.map((c: string, i: number) => (
-                <span key={i} className="text-xs px-3 py-1 rounded-full" style={{ background: "rgba(201,169,110,0.08)", border: "1px solid rgba(201,169,110,0.25)", color: "#C9A96E" }}>
+              {profile.credentials.map((c) => (
+                <span key={c} className="text-xs px-3 py-1 rounded-full" style={{ background: "rgba(201,169,110,0.08)", border: "1px solid rgba(201,169,110,0.25)", color: "#C9A96E" }}>
                   {c}
                 </span>
               ))}

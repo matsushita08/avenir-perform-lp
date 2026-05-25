@@ -182,6 +182,16 @@ export const content = {
     ctaUrl: "https://lin.ee/wP5GtLI",
   },
 
+  gallery: {
+    photos: [
+      { src: "/images/session1.jpg", caption: "院内グループセッション" },
+      { src: "/images/session2.jpg", caption: "マンツーマン指導" },
+      { src: "/images/session3.jpg", caption: "動作分析・指導" },
+      { src: "/images/session4.jpg", caption: "グループエクササイズ" },
+      { src: "/images/session5.jpg", caption: "パフォーマンストレーニング" },
+    ],
+  },
+
   footer: {
     name: "Avenir Perform（アヴニール パフォーム）",
     address: "千葉県浦安市今川1-11-39 COIAS 101",

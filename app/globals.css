@@ -68,3 +68,10 @@ body::before {
 .float-anim {
   animation: float 4s ease-in-out infinite;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}

@@ -2,26 +2,21 @@
 
 import Image from "next/image";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-
-const photos = [
-  { src: "/images/session1.jpg", caption: "院内グループセッション" },
-  { src: "/images/session2.jpg", caption: "マンツーマン指導" },
-  { src: "/images/session3.jpg", caption: "動作分析・指導" },
-  { src: "/images/session4.jpg", caption: "グループエクササイズ" },
-  { src: "/images/session5.jpg", caption: "パフォーマンストレーニング" },
-];
+import { content } from "@/config/content";
 
 export default function Gallery() {
+  const { photos } = content.gallery;
+
   return (
     <SectionWrapper>
       <p className="text-xs font-bold tracking-widest mb-6 text-center" style={{ color: "#C9A96E" }}>
         TRAINING GALLERY
       </p>
 
-      <div className="flex gap-3 overflow-x-auto pb-3" style={{ scrollbarWidth: "none" }}>
-        {photos.map((photo, i) => (
+      <div className="flex gap-3 overflow-x-auto pb-3 no-scrollbar">
+        {photos.map((photo) => (
           <div
-            key={i}
+            key={photo.src}
             className="relative flex-shrink-0 rounded-xl overflow-hidden"
             style={{ width: "200px", height: "260px" }}
           >
@@ -29,6 +24,8 @@ export default function Gallery() {
               src={photo.src}
               alt={photo.caption}
               fill
+              sizes="200px"
+              loading="lazy"
               className="object-cover"
               style={{ filter: "brightness(0.75) saturate(0.9)" }}
             />
