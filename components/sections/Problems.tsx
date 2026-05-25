@@ -7,11 +7,11 @@ import { content } from "@/config/content";
 
 export default function Problems() {
   const { problems } = content;
-  const conclusionLines = problems.conclusion.split("\n");
+  const outroLines = problems.outro.split("\n");
 
   return (
     <SectionWrapper>
-      <SectionTitle>{problems.title}</SectionTitle>
+      <SectionTitle>{problems.intro}</SectionTitle>
 
       <div className="space-y-3 mb-10">
         {problems.items.map((item, i) => (
@@ -30,10 +30,10 @@ export default function Problems() {
 
       <div className="text-center py-8 px-6 rounded-xl" style={{ background: "rgba(201, 169, 110, 0.06)", border: "1px solid rgba(201, 169, 110, 0.3)" }}>
         <p className="text-lg leading-relaxed font-medium" style={{ color: "#E8E8EC" }}>
-          {conclusionLines.map((line, i) => (
+          {outroLines.map((line, i) => (
             <span key={i}>
               {line}
-              {i < conclusionLines.length - 1 && <br />}
+              {i < outroLines.length - 1 && <br />}
             </span>
           ))}
         </p>

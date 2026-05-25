@@ -1,23 +1,23 @@
 import ParticleCanvas from "@/components/ParticleCanvas";
 import Hero from "@/components/sections/Hero";
 import Problems from "@/components/sections/Problems";
-import Insight from "@/components/sections/Insight";
+import Story from "@/components/sections/Story";
 import About from "@/components/sections/About";
-import Testimonial from "@/components/sections/Testimonial";
-import Services from "@/components/sections/Services";
+import Discover from "@/components/sections/Discover";
+import Steps from "@/components/sections/Steps";
 import Reasons from "@/components/sections/Reasons";
+import Testimonials from "@/components/sections/Testimonials";
+import Gallery from "@/components/sections/Gallery";
 import Profile from "@/components/sections/Profile";
-import Pricing from "@/components/sections/Pricing";
+import Booking from "@/components/sections/Booking";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
-import Gallery from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
     <main style={{ background: "#06060A", minHeight: "100vh" }}>
       <ParticleCanvas />
 
-      {/* divider utility */}
       <style>{`
         .section-divider {
           width: 1px;
@@ -31,21 +31,23 @@ export default function Home() {
       <div className="section-divider" />
       <Problems />
       <div className="section-divider" />
-      <Insight />
+      <Story />
       <div className="section-divider" />
       <About />
       <div className="section-divider" />
-      <Testimonial />
+      <Discover />
       <div className="section-divider" />
-      <Services />
-      <div className="section-divider" />
-      <Gallery />
+      <Steps />
       <div className="section-divider" />
       <Reasons />
       <div className="section-divider" />
+      <Testimonials />
+      <div className="section-divider" />
+      <Gallery />
+      <div className="section-divider" />
       <Profile />
       <div className="section-divider" />
-      <Pricing />
+      <Booking />
       <div className="section-divider" />
       <FAQ />
       <div className="section-divider" />

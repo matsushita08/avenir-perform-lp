@@ -90,8 +90,10 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 1.3 }}
+        className="flex flex-col items-center gap-3"
       >
         <CTAButton href={hero.ctaUrl} label={hero.cta} />
+        <p className="text-xs" style={{ color: "rgba(201,169,110,0.6)" }}>{hero.note}</p>
       </motion.div>
 
       {/* scroll hint */}

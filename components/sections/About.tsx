@@ -7,7 +7,7 @@ import { content } from "@/config/content";
 
 export default function About() {
   const { about } = content;
-  const descLines = about.description.split("\n\n");
+  const descLines = about.philosophy.split("\n\n");
   const taglines = about.tagline.split("\n");
 
   return (

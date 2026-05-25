@@ -8,7 +8,7 @@ import { content } from "@/config/content";
 export default function FinalCTA() {
   const { finalCta, footer } = content;
   const descLines = finalCta.description.split("\n\n");
-  const quoteLines = finalCta.quote.split("\n");
+  const titleLines = finalCta.title.split("\n");
 
   return (
     <SectionWrapper id="cta">
@@ -20,7 +20,12 @@ export default function FinalCTA() {
           className="text-2xl md:text-3xl font-bold mb-8 glow-text"
           style={{ color: "#E8E8EC" }}
         >
-          {finalCta.title}
+          {titleLines.map((line, i) => (
+            <span key={i}>
+              {line}
+              {i < titleLines.length - 1 && <br />}
+            </span>
+          ))}
         </motion.h2>
 
         <div className="space-y-4 mb-10">
@@ -33,15 +38,10 @@ export default function FinalCTA() {
           ))}
         </div>
 
-        <div className="rounded-xl px-6 py-6 mb-10" style={{ background: "rgba(201,169,110,0.06)", border: "1px solid rgba(201,169,110,0.25)" }}>
-          <p className="text-base italic leading-relaxed" style={{ color: "#C9A96E" }}>
-            {quoteLines.map((line, i) => (
-              <span key={i}>{line}{i < quoteLines.length - 1 && <br />}</span>
-            ))}
-          </p>
-        </div>
-
         <CTAButton href={finalCta.ctaUrl} label={finalCta.cta} size="lg" />
+        <p className="text-xs mt-3" style={{ color: "rgba(139,139,158,0.65)" }}>
+          {finalCta.note}
+        </p>
       </div>
 
       {/* footer info */}
