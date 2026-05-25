@@ -13,8 +13,8 @@ export default function CTAButton({ href, label, size = "lg" }: Props) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`cta-btn inline-block rounded-full font-bold tracking-widest text-[#06060A] ${padding} transition-transform hover:scale-105 active:scale-95`}
-      style={{ background: "linear-gradient(135deg, #C9A96E 0%, #E8C98A 50%, #C9A96E 100%)" }}
+      className={`cta-btn inline-block rounded-full font-bold tracking-widest text-white ${padding} transition-transform hover:scale-105 active:scale-95`}
+      style={{ background: "linear-gradient(135deg, #3B6E47 0%, #4D8A5E 50%, #3B6E47 100%)" }}
     >
       {label}
     </a>

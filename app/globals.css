@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
 :root {
+  --green: #3B6E47;
+  --green-light: #4D8A5E;
+  --green-pale: #EAF2EC;
+  --bg: #F8F5F1;
+  --bg-card: #FFFFFF;
+  --text: #1C1C1E;
+  --subtext: #6B6B7B;
   --gold: #C9A96E;
-  --gold-light: #E8C98A;
-  --bg: #06060A;
-  --text: #E8E8EC;
-  --subtext: #8B8B9E;
 }
 
 * {
@@ -24,36 +27,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* scanline overlay */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 3px,
-    rgba(0, 0, 0, 0.04) 3px,
-    rgba(0, 0, 0, 0.04) 4px
-  );
-  pointer-events: none;
-  z-index: 9998;
-}
-
 .glow-text {
-  text-shadow: 0 0 20px rgba(201, 169, 110, 0.5),
-               0 0 40px rgba(201, 169, 110, 0.2);
+  text-shadow: 0 0 30px rgba(59, 110, 71, 0.15);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(201, 169, 110, 0.2);
-  backdrop-filter: blur(10px);
+  background: #FFFFFF;
+  border: 1px solid rgba(59, 110, 71, 0.15);
+  box-shadow: 0 2px 16px rgba(59, 110, 71, 0.06);
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 169, 110, 0.3), 0 0 40px rgba(201, 169, 110, 0.1); }
-  50% { box-shadow: 0 0 30px rgba(201, 169, 110, 0.6), 0 0 60px rgba(201, 169, 110, 0.2); }
+  0%, 100% { box-shadow: 0 4px 20px rgba(59, 110, 71, 0.25), 0 8px 40px rgba(59, 110, 71, 0.1); }
+  50% { box-shadow: 0 4px 30px rgba(59, 110, 71, 0.4), 0 8px 60px rgba(59, 110, 71, 0.15); }
 }
 
 .cta-btn {

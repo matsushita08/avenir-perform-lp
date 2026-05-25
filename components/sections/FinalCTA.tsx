@@ -18,7 +18,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-2xl md:text-3xl font-bold mb-8 glow-text"
-          style={{ color: "#E8E8EC" }}
+          style={{ color: "#1C1C1E" }}
         >
           {titleLines.map((line, i) => (
             <span key={i}>
@@ -30,7 +30,7 @@ export default function FinalCTA() {
 
         <div className="space-y-4 mb-10">
           {descLines.map((para, i) => (
-            <p key={i} className="text-base leading-8" style={{ color: "#8B8B9E" }}>
+            <p key={i} className="text-base leading-8" style={{ color: "#6B6B7B" }}>
               {para.split("\n").map((line, j) => (
                 <span key={j}>{line}{j < para.split("\n").length - 1 && <br />}</span>
               ))}
@@ -45,11 +45,11 @@ export default function FinalCTA() {
       </div>
 
       {/* footer info */}
-      <div className="mt-16 pt-8 text-center space-y-1" style={{ borderTop: "1px solid rgba(201,169,110,0.15)" }}>
-        <p className="text-sm font-bold" style={{ color: "#C9A96E" }}>{footer.name}</p>
-        <p className="text-xs" style={{ color: "#8B8B9E" }}>{footer.address}</p>
-        <p className="text-xs" style={{ color: "#8B8B9E" }}>{footer.conditions}</p>
-        <p className="text-xs" style={{ color: "#8B8B9E" }}>{footer.firstSession}</p>
+      <div className="mt-16 pt-8 text-center space-y-1" style={{ borderTop: "1px solid rgba(59,110,71,0.15)" }}>
+        <p className="text-sm font-bold" style={{ color: "#3B6E47" }}>{footer.name}</p>
+        <p className="text-xs" style={{ color: "#6B6B7B" }}>{footer.address}</p>
+        <p className="text-xs" style={{ color: "#6B6B7B" }}>{footer.conditions}</p>
+        <p className="text-xs" style={{ color: "#6B6B7B" }}>{footer.firstSession}</p>
         <p className="text-xs mt-4" style={{ color: "rgba(139,139,158,0.4)" }}>© 2024 Avenir Perform. All rights reserved.</p>
       </div>
     </SectionWrapper>

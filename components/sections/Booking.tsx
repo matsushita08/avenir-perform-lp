@@ -15,10 +15,10 @@ export default function Booking() {
       {/* 料金ボックス */}
       <div className="glass-card rounded-2xl p-6 mb-8">
         <div className="text-center mb-4">
-          <span className="text-4xl font-bold" style={{ color: "#E8C98A" }}>
+          <span className="text-4xl font-bold" style={{ color: "#4D8A5E" }}>
             {booking.price}
           </span>
-          <span className="text-sm ml-2" style={{ color: "#8B8B9E" }}>
+          <span className="text-sm ml-2" style={{ color: "#6B6B7B" }}>
             {booking.duration}
           </span>
           <p className="text-xs mt-1" style={{ color: "rgba(139,139,158,0.7)" }}>
@@ -33,9 +33,9 @@ export default function Booking() {
               key={i}
               className="text-xs px-3 py-1 rounded-full font-medium"
               style={{
-                background: "rgba(201,169,110,0.12)",
-                border: "1px solid rgba(201,169,110,0.35)",
-                color: "#C9A96E",
+                background: "rgba(59,110,71,0.12)",
+                border: "1px solid rgba(59,110,71,0.35)",
+                color: "#3B6E47",
               }}
             >
               {badge}
@@ -46,8 +46,8 @@ export default function Booking() {
         {/* includes */}
         <ul className="space-y-2">
           {booking.includes.map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "#8B8B9E" }}>
-              <span style={{ color: "#C9A96E", flexShrink: 0 }}>✓</span>
+            <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "#6B6B7B" }}>
+              <span style={{ color: "#3B6E47", flexShrink: 0 }}>✓</span>
               {item}
             </li>
           ))}
@@ -58,7 +58,7 @@ export default function Booking() {
       <div className="mb-8">
         <h3
           className="text-base font-bold mb-5 tracking-wider"
-          style={{ color: "#E8E8EC" }}
+          style={{ color: "#1C1C1E" }}
         >
           予約の流れ
         </h3>
@@ -68,18 +68,18 @@ export default function Booking() {
               <div
                 className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
                 style={{
-                  background: "rgba(201,169,110,0.12)",
-                  border: "1px solid rgba(201,169,110,0.5)",
-                  color: "#C9A96E",
+                  background: "rgba(59,110,71,0.12)",
+                  border: "1px solid rgba(59,110,71,0.5)",
+                  color: "#3B6E47",
                 }}
               >
                 {i + 1}
               </div>
               <div className="pt-1">
-                <span className="text-xs font-bold tracking-widest mr-2" style={{ color: "#C9A96E" }}>
+                <span className="text-xs font-bold tracking-widest mr-2" style={{ color: "#3B6E47" }}>
                   {f.step}
                 </span>
-                <span className="text-sm" style={{ color: "#8B8B9E" }}>
+                <span className="text-sm" style={{ color: "#6B6B7B" }}>
                   {f.text}
                 </span>
               </div>
@@ -92,13 +92,13 @@ export default function Booking() {
       <div className="glass-card rounded-2xl p-6 mb-8">
         <h3
           className="text-base font-bold mb-4 tracking-wider"
-          style={{ color: "#E8E8EC" }}
+          style={{ color: "#1C1C1E" }}
         >
           当日の持ち物
         </h3>
         <ul className="space-y-2">
           {booking.checklist.map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "#8B8B9E" }}>
+            <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "#6B6B7B" }}>
               <span style={{ color: "rgba(139,139,158,0.6)", flexShrink: 0 }}>□</span>
               {item}
             </li>
@@ -110,9 +110,9 @@ export default function Booking() {
       <div
         className="rounded-xl px-5 py-4 mb-10 text-sm text-center"
         style={{
-          background: "rgba(201,169,110,0.05)",
-          border: "1px solid rgba(201,169,110,0.25)",
-          color: "#C9A96E",
+          background: "rgba(59,110,71,0.05)",
+          border: "1px solid rgba(59,110,71,0.25)",
+          color: "#3B6E47",
         }}
       >
         {booking.noSellNote}

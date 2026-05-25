@@ -19,18 +19,18 @@ export default function FAQ() {
           <div
             key={i}
             className="rounded-xl overflow-hidden"
-            style={{ border: "1px solid rgba(201,169,110,0.2)" }}
+            style={{ border: "1px solid rgba(59,110,71,0.2)" }}
           >
             <button
               onClick={() => setOpen(open === i ? null : i)}
               className="w-full text-left px-6 py-5 flex items-start justify-between gap-4"
               style={{ background: "rgba(255,255,255,0.02)" }}
             >
-              <span className="text-sm font-medium leading-relaxed flex items-start gap-3" style={{ color: "#E8E8EC" }}>
-                <span className="flex-shrink-0 font-bold text-xs pt-0.5" style={{ color: "#C9A96E" }}>Q.</span>
+              <span className="text-sm font-medium leading-relaxed flex items-start gap-3" style={{ color: "#1C1C1E" }}>
+                <span className="flex-shrink-0 font-bold text-xs pt-0.5" style={{ color: "#3B6E47" }}>Q.</span>
                 {item.q}
               </span>
-              <span className="flex-shrink-0 text-lg transition-transform" style={{ color: "#C9A96E", transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
+              <span className="flex-shrink-0 text-lg transition-transform" style={{ color: "#3B6E47", transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
             </button>
 
             <AnimatePresence>
@@ -42,9 +42,9 @@ export default function FAQ() {
                   transition={{ duration: 0.25 }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 pb-5 pt-2" style={{ borderTop: "1px solid rgba(201,169,110,0.1)" }}>
-                    <p className="text-sm leading-7 pl-5" style={{ color: "#8B8B9E" }}>
-                      <span className="font-bold mr-2" style={{ color: "#C9A96E" }}>A.</span>
+                  <div className="px-6 pb-5 pt-2" style={{ borderTop: "1px solid rgba(59,110,71,0.1)" }}>
+                    <p className="text-sm leading-7 pl-5" style={{ color: "#6B6B7B" }}>
+                      <span className="font-bold mr-2" style={{ color: "#3B6E47" }}>A.</span>
                       {item.a}
                     </p>
                   </div>

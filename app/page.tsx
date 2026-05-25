@@ -15,15 +15,14 @@ import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
-    <main style={{ background: "#06060A", minHeight: "100vh" }}>
-      <ParticleCanvas />
+    <main style={{ background: "#F8F5F1", minHeight: "100vh" }}>
 
       <style>{`
         .section-divider {
           width: 1px;
           height: 60px;
           margin: 0 auto;
-          background: linear-gradient(to bottom, rgba(201,169,110,0.3), transparent);
+          background: linear-gradient(to bottom, rgba(59,110,71,0.3), transparent);
         }
       `}</style>
 

@@ -19,13 +19,13 @@ export default function Testimonials() {
         <div key={i} className="glass-card rounded-2xl p-6 mb-6">
           {/* header */}
           <div className="mb-4">
-            <span className="text-base font-bold mr-3" style={{ color: "#C9A96E" }}>
+            <span className="text-base font-bold mr-3" style={{ color: "#3B6E47" }}>
               {item.age}
             </span>
-            <span className="text-sm mr-3" style={{ color: "#8B8B9E" }}>
+            <span className="text-sm mr-3" style={{ color: "#6B6B7B" }}>
               {item.job}
             </span>
-            <span className="text-sm italic" style={{ color: "#8B8B9E" }}>
+            <span className="text-sm italic" style={{ color: "#6B6B7B" }}>
               {item.issue}
             </span>
           </div>
@@ -33,7 +33,7 @@ export default function Testimonials() {
           {/* body */}
           <div className="space-y-3">
             {item.text.split("\n\n").map((para, pi) => (
-              <p key={pi} className="text-base leading-8" style={{ color: "#8B8B9E" }}>
+              <p key={pi} className="text-base leading-8" style={{ color: "#6B6B7B" }}>
                 {para.split("\n").map((line, li, arr) => (
                   <span key={li}>
                     {line}

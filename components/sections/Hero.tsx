@@ -49,7 +49,7 @@ export default function Hero() {
         animate={{ opacity: 1, letterSpacing: "0.5em" }}
         transition={{ duration: 1.2, delay: 0.2 }}
         className="text-xs font-semibold tracking-[0.5em] mb-10"
-        style={{ color: "#C9A96E" }}
+        style={{ color: "#3B6E47" }}
       >
         AVENIR PERFORM
       </motion.p>
@@ -75,7 +75,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.9 }}
         className="text-lg md:text-xl leading-relaxed mb-14"
-        style={{ color: "#8B8B9E" }}
+        style={{ color: "#6B6B7B" }}
       >
         {subLines.map((line, i) => (
           <span key={i}>
@@ -93,7 +93,7 @@ export default function Hero() {
         className="flex flex-col items-center gap-3"
       >
         <CTAButton href={hero.ctaUrl} label={hero.cta} />
-        <p className="text-xs" style={{ color: "rgba(201,169,110,0.6)" }}>{hero.note}</p>
+        <p className="text-xs" style={{ color: "rgba(59,110,71,0.6)" }}>{hero.note}</p>
       </motion.div>
 
       {/* scroll hint */}
@@ -102,10 +102,10 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-10 flex flex-col items-center gap-2"
-        style={{ color: "#8B8B9E" }}
+        style={{ color: "#6B6B7B" }}
       >
         <span className="text-xs tracking-widest">SCROLL</span>
-        <div className="float-anim w-px h-8" style={{ background: "linear-gradient(to bottom, #C9A96E, transparent)" }} />
+        <div className="float-anim w-px h-8" style={{ background: "linear-gradient(to bottom, #3B6E47, transparent)" }} />
       </motion.div>
     </section>
   );

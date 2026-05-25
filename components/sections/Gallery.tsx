@@ -9,7 +9,7 @@ export default function Gallery() {
 
   return (
     <SectionWrapper>
-      <p className="text-xs font-bold tracking-widest mb-6 text-center" style={{ color: "#C9A96E" }}>
+      <p className="text-xs font-bold tracking-widest mb-6 text-center" style={{ color: "#3B6E47" }}>
         TRAINING GALLERY
       </p>
 
@@ -35,7 +35,7 @@ export default function Gallery() {
             />
             <p
               className="absolute bottom-3 left-3 right-3 text-xs leading-5"
-              style={{ color: "rgba(201,169,110,0.9)" }}
+              style={{ color: "rgba(59,110,71,0.9)" }}
             >
               {photo.caption}
             </p>

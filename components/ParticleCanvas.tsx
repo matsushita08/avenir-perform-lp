@@ -24,7 +24,7 @@ export default function ParticleCanvas() {
     const particles: Particle[] = [];
     const COUNT = 80;
     const LINK_DIST = 140;
-    const GOLD = "201, 169, 110";
+    const GOLD = "59, 110, 71";
 
     const resize = () => {
       canvas.width = window.innerWidth;
